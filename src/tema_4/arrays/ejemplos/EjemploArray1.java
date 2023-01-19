@@ -1,4 +1,4 @@
-package tema_4.arrays;
+package tema_4.arrays.ejemplos;
 
 public class EjemploArray1 {
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class EjemploArray1 {
 
         System.out.println(a.length);//El primer array tiene 5 posiciones
         System.out.println(a[0].length);//El segundo array tiene 2 posiciones
-        //'System.out.println(a[][].length);//Esto fa fallo porque lo que está almacenado en la segunda array no es otra array
+        //'System.out.println(a[][].length);//Esto daría fallo porque lo que está almacenado en la segunda array no es otra array
 
         int[][] c =  {{0},{0,1},{0,1,2}};
 

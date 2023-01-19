@@ -1,4 +1,4 @@
-package tema_4.arrays;
+package tema_4.arrays.ejemplos;
 
 public class CrearArray {
     public static void main(String[] args) {

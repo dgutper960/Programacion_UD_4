@@ -1,4 +1,4 @@
-package tema_4.arrays.ejemplo2;
+package tema_4.arrays.ejercicios;
 
 public class MetodosConArray {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class MetodosConArray {
         Double[] arrayDeEntrada = {1d, 2d, 3d};
         int[][] datosRetorno = metodo(x, y, z, arrayDeEntrada);
         System.out.println(x);
-        // Siempre es uno porque el almacenaje es por valor
+        // Siempre es uno porque el tipo de almacenaje es por valor
 
     }
     static int[][] metodo (int x , int y, String z, Double[] arrayDeEntrada){
