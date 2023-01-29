@@ -1,6 +1,6 @@
-package tema_4.arrays.ejercicios.ej_4_toStringPersona;
+package tema_4.arrays.ejercicios.ejercicio_4_4_toStringPersona;
 
-public class MainPessonas {
+public class MainPersonas {
     public static void main(String[] args) {
         /** Creamos tres Personas, con el constructor que requiere nombre y edad como parámetro */
 

@@ -1,4 +1,4 @@
-package tema_4.arrays.ejercicios.ej_4_toStringPersona;
+package tema_4.arrays.ejercicios.ejercicio_4_4_toStringPersona;
 
 public class Persona {
     public String nombre; /** Declaramos la variable nombre */
