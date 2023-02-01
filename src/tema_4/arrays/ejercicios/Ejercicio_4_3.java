@@ -94,3 +94,10 @@ public class Ejercicio_4_3 {
     //    3º La tercera usando Arrays.copyOfRange
     //    4º La última usando System.arraycopy
 
+    /** Crearemos un Metodo para cada uno de los pasos **/
+
+    // TODO GITHUB DE JOHNATAN ///
+
+
+
+
