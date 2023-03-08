@@ -98,7 +98,7 @@ public class Act_4_6_Cadenas {
 
     //TODO Convertir los siguientes números a String y posteriormente ordenarlos alfabéticamente de menor a mayor
 
-    /** EJERCICO POR RESOLVER*/
+    /** EJERCICIO POR RESOLVER*/
 
 }
 
