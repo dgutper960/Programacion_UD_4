@@ -35,6 +35,6 @@ package tema_4.practica.ejercicio2;
             }
             return repetida;
         }
-        
+
     }
 
