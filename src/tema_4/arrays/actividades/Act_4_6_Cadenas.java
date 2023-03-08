@@ -14,8 +14,8 @@ public class Act_4_6_Cadenas {
         String cadena2 = new String(new char[]{'C', 'A', 'D', 'E', 'N', 'A'});
         String cadena3 = cadena1 + " David Gutierrez";
         String[] cadena4 = {"Julian", "Pablo", "Jossie", "Adri", "Daniel", "Juan Ma", "Fran", "Antonio"};
-        int[] numerosString = { 56, 17, -4, 6 };
-        String[] strings = numerosConvertidosString(numerosString);
+        int[] numerosString = {56, 17, -4, 6};
+
 
         System.out.println(c);
 
@@ -27,25 +27,29 @@ public class Act_4_6_Cadenas {
         imprimeLongitudCadena("StringParaMedirLongitud");
         caracterEnPosicionEmpezandoEn(cadena, 1);
         System.out.println("Número de ocurrencias de la letra seleccionada en la palabra introducida: " + ocurrenciasDeUnCaracter("cincolobitos", 'o'));
-        System.out.print("Array ordenado alfabeticamente: " );
+        System.out.print("Array ordenado alfabeticamente: ");
         ordenarAlfabeticamenteArray(cadena4);
         System.out.print("\nArray int --> Array String: ");
-        System.out.println(Arrays.toString(strings));
         System.out.print("Codificamos un array: ");
-        System.out.println(Arrays.toString(codificarCadena("Esto es un array para codificar pero no se lo digas a nadie, eh?")));
 
     }
 
     //TODO Imprimir la longitud de una cadena
-    /**Usamos el método "length()" de string */
+
+    /**
+     * Usamos el método "length()" de string
+     */
     private static void imprimeLongitudCadena(String cadena) {
         System.out.println("La longitud de la cadena " + cadena + " es de " + cadena.length());
     }
 
     //TODO Carácter en Posición empezando en 1 (uno)
-    /** Usaremos un condicional if. Si se cumple la condición, usamos charAt() para que nos diga
+
+    /**
+     * Usaremos un condicional if. Si se cumple la condición, usamos charAt() para que nos diga
      * el crarcter que se encuentra en la posición indicada.
-     * Se resta 1 a la posición ya tenemos en cuenta que el .lenght() cuenta desde 0 */
+     * Se resta 1 a la posición ya tenemos en cuenta que el .lenght() cuenta desde 0
+     */
     private static void caracterEnPosicionEmpezandoEn(String cadena, int pos) {
         if (pos <= cadena.length() && pos >= 0) {
             System.out.println("El carácter en la posición " + pos + " de " + cadena + " es " + cadena.charAt(pos - 1));
@@ -53,11 +57,14 @@ public class Act_4_6_Cadenas {
     }
 
     //TODO Cuenta ocurrencias de un carácter
-    /** Creamos una variable 'contador' para almacenar las ocurrencias
+
+    /**
+     * Creamos una variable 'contador' para almacenar las ocurrencias
      * usamos un bucle for con 'i' inicializado a 0 cuya condición es que mientras 'i' sea menor que 0,
      * la longitud del String introducido se recorre con el método "charAt()".
      * Cada vez que el caracter en la posición 'i' del String "cadena" sea igual al parámetro char de entrada,
-     * al contador se le suma uno. */
+     * al contador se le suma uno.
+     */
     private static int ocurrenciasDeUnCaracter(String cadena, char b) {
         int contador = 0;
         for (int i = 0; i < cadena.length(); i++) {
@@ -69,8 +76,11 @@ public class Act_4_6_Cadenas {
     }
 
     //TODO Imprime cadenas en orden alfabético las cadenas dadas por un array de cadenas
-    /** Usamos el método de Arrays "sort()" para ordenar alfabéticamente el array introducido.
-     * Con un bucle for, vamos imprimiendo cada posición. */
+
+    /**
+     * Usamos el método de Arrays "sort()" para ordenar alfabéticamente el array introducido.
+     * Con un bucle for, vamos imprimiendo cada posición.
+     */
     private static void ordenarAlfabeticamenteArray(String[] arrayString) {
         Arrays.sort(arrayString);
         for (int i = 0; i < arrayString.length; i++)
@@ -89,4 +99,6 @@ public class Act_4_6_Cadenas {
     //TODO Convertir los siguientes números a String y posteriormente ordenarlos alfabéticamente de menor a mayor
 
     /** EJERCICO POR RESOLVER*/
+
 }
+
