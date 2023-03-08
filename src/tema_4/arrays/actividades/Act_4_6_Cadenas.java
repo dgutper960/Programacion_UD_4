@@ -37,16 +37,15 @@ public class Act_4_6_Cadenas {
     }
 
     //TODO Imprimir la longitud de una cadena
-    //Usamos el método "length()" de string, que nos devuelve la longitud de la misma
+    /**Usamos el método "length()" de string */
     private static void imprimeLongitudCadena(String cadena) {
         System.out.println("La longitud de la cadena " + cadena + " es de " + cadena.length());
     }
 
     //TODO Carácter en Posición empezando en 1 (uno)
-    //Hacemos una comprobación con if para que salga un mensaje apropiado si el número introducido es mayor que la
-    //longitud del array o menor que 0. Si se cumple esta condición usamos el método "charAt()" que nos indica
-    //el carácter que se encuentra en la posición indicada, con la peculiaridad que le restamos 1 (uno) a "pos" porque
-    //queremos que la primera posición del array sea el 1 (uno) en lugar del 0 (cero)
+    /** Usaremos un condicional if. Si se cumple la condición, usamos charAt() para que nos diga
+     * el crarcter que se encuentra en la posición indicada.
+     * Se resta 1 a la posición ya tenemos en cuenta que el .lenght() cuenta desde 0 */
     private static void caracterEnPosicionEmpezandoEn(String cadena, int pos) {
         if (pos <= cadena.length() && pos >= 0) {
             System.out.println("El carácter en la posición " + pos + " de " + cadena + " es " + cadena.charAt(pos - 1));
@@ -54,11 +53,11 @@ public class Act_4_6_Cadenas {
     }
 
     //TODO Cuenta ocurrencias de un carácter
-    //Creamos una variable contador que contará las ocurrencias
-    //Hacemos un bucle con una variable "i" siendo iniciada a cero, y el bucle se repite mientras que "i" sea menor que
-    //la longitud del String "s" introducido, en el bucle se recorre cada letra del String con el método "charAt()", y si
-    // se cumple la condición de que el carácter en la posición "i" del String "s" es igual al parámetro char
-    // introducido, al contador se le suma uno.
+    /** Creamos una variable 'contador' para almacenar las ocurrencias
+     * usamos un bucle for con 'i' inicializado a 0 cuya condición es que mientras 'i' sea menor que 0,
+     * la longitud del String introducido se recorre con el método "charAt()".
+     * Cada vez que el caracter en la posición 'i' del String "cadena" sea igual al parámetro char de entrada,
+     * al contador se le suma uno. */
     private static int ocurrenciasDeUnCaracter(String cadena, char b) {
         int contador = 0;
         for (int i = 0; i < cadena.length(); i++) {
@@ -70,9 +69,8 @@ public class Act_4_6_Cadenas {
     }
 
     //TODO Imprime cadenas en orden alfabético las cadenas dadas por un array de cadenas
-    // Usamos el método de Arrays "sort()" para ordenar alfabéticamente el array introducido, y después con un bucle
-    // vamos pintando cada posición. En el orden de unicode las minúsculas están después de las mayúsculas, así que
-    // si en el array hubiese una palabra en minúsculas, se pintarían después de las que tienen mayúscula.
+    /** Usamos el método de Arrays "sort()" para ordenar alfabéticamente el array introducido.
+     * Con un bucle for, vamos imprimiendo cada posición. */
     private static void ordenarAlfabeticamenteArray(String[] arrayString) {
         Arrays.sort(arrayString);
         for (int i = 0; i < arrayString.length; i++)
@@ -84,27 +82,11 @@ public class Act_4_6_Cadenas {
     // se corte esa frase y se meta en una posición del array y que todas las vocales se sustituyan por el número gráficamente más parecido
     // o --> 0 | i --> 1 | a --> 4 | e --> 3 | u --> 8
 
-    public static String[] codificarCadena (String texto){
 
-        String cambiarVocales = texto.replaceAll("(?i)a", "4").replaceAll("(?i)e", "3").replaceAll("(?i)i", "1").replaceAll("(?i)o", "0").replaceAll("u", "v").replaceAll("U", "V");
-        String[] arrayCodificado = cambiarVocales.split("\\.");
-
-        for (int i = 0; i < arrayCodificado.length; i++){
-            arrayCodificado[i] = arrayCodificado[i].trim();
-        }
-        return arrayCodificado;
-    }
-
+    /** EJERCICIO POR RESOLVER */
 
 
     //TODO Convertir los siguientes números a String y posteriormente ordenarlos alfabéticamente de menor a mayor
-    private static String[] numerosConvertidosString(int[] arrayInt) {
-        String[] arrayString = new String[arrayInt.length];
-        for (int i = 0; i < arrayInt.length; i++){
-            arrayString[i] = String.valueOf(arrayInt[i]);
-        }
-        Arrays.sort(arrayString);
 
-        return  arrayString;
-    }
+    /** EJERCICO POR RESOLVER*/
 }
